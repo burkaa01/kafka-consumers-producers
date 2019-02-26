@@ -1,0 +1,12 @@
+topics:
+  consume-from: first-topic
+  produce-to: second-topic
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      group-id: consumer-group-1
+      client-id: consumer-client-1
